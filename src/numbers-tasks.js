@@ -364,12 +364,9 @@ function numberToStringInBase(number, base) {
  * @example:
  * 12345, 2    => '1.23e+4'
  */
-function toExponential(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toExponential(number, fractionDigits) {
+  return number.toExponential(fractionDigits);
 }
-// const log = Math.floor(Math.log10(Math.abs(number)));
-// const str = (number / 10 ** log).toFixed(fractionDigits);
-// return `${str}e+${log}`;
 
 /**
  * Returns a string representation of a number in fixed-point notation.
