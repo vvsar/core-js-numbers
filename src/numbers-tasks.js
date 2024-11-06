@@ -367,6 +367,9 @@ function numberToStringInBase(number, base) {
 function toExponential(/* number, fractionDigits */) {
   throw new Error('Not implemented');
 }
+// const log = Math.floor(Math.log10(Math.abs(number)));
+// const str = (number / 10 ** log).toFixed(fractionDigits);
+// return `${str}e+${log}`;
 
 /**
  * Returns a string representation of a number in fixed-point notation.
@@ -379,8 +382,8 @@ function toExponential(/* number, fractionDigits */) {
  * 12345, 2    => '12345.00'
  * 12.345, 1   => '12.3'
  */
-function toFixed(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toFixed(number, fractionDigits) {
+  return number.toFixed(fractionDigits);
 }
 
 /**
